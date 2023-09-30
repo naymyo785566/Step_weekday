@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Padauk:wght@400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+:root {
+  --primary: #581b98;
+  --secondary: #22d1ee;
+  --danger: #f3558e;
+  --dark: #000000;
+  --heading-font: "Montserrat", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Padauk", sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  padding: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.box {
+  border: 3px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.sub-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+/* btn-css */
+.btn {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+}
+.btn-primary {
+  background-color: #581b98;
+
+  border: 2px solid #581b98;
+}
+.btn-secondary {
+  background-color: #22d1ee;
+
+  border: 2px solid #22d1ee;
+}
+.btn-danger {
+  background-color: #f3558e;
+
+  border: 2px solid #f3558e;
+}
+.btn-dark {
+  background-color: black;
+
+  border: 2px solid black;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  background-color: transparent;
+}
+.btn-outline-secondary {
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  background-color: transparent;
+}
+.btn-outline-danger {
+  color: var(--danger);
+  border: 2px solid var(--danger);
+  background-color: transparent;
+}
+.btn-outline-dark {
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  background-color: transparent;
+}
+.btn-icon {
+  /* width: 40.33px;
+  height: 40.33px; */
+  aspect-ratio: 1;
+  padding: 0;
+}
+.btn-pill {
+  border-radius: 20px;
+}
+
+/* table-css */
+.table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table tr {
+  vertical-align: top;
+}
+.table th,
+td {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+.table th {
+  text-align: left;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.align-top {
+  vertical-align: top;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.align-bottom {
+  vertical-align: bottom;
+}
+.table-borderless {
+  border: none;
+}
+.table-borderless td,
+.table-borderless th {
+  border: none;
+}
+.table-strip thead {
+  background-color: #7e768f;
+}
+
+.table-strip tbody tr:nth-child(even) {
+  background-color: #cabbe9;
+}
+.table tbody tr:hover {
+  background-color: rgb(217, 215, 215) !important;
+}
+
+/* List css */
+.html-list {
+  /* border: 1px solid red;
+  padding: 10px; */
+  list-style-type: square;
+}
+
+.html-list li {
+  /* border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px; */
+}
+.list-group {
+  /* border: 1px solid red;
+  padding: 10px; */
+  list-style-type: none;
+}
+
+.list-group li {
+  border: 1px solid black;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+}
+.list-group li:first-child {
+  /* background-color: #f3558e; */
+  border-radius: 5px 5px 0 0;
+}
+.list-group li:last-child {
+  /* background-color: #f3558e; */
+  border-radius: 0 0 5px 5px;
+}
+.list-group li:hover {
+  background-color: #cccccc;
+}
+.list-group li.active {
+  background-color: #000000;
+  color: #fff;
+}
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list li {
+  /* border: 1px solid black; */
+  padding: 10px 20px;
+  display: inline-block;
+}
+.nav-list li.active {
+  /* border: 2px solid black; */
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 540px) {
+  .nav-list li {
+    display: block;
+  }
+}
+
+.card {
+  border: 2px solid black;
+
+  width: 300px;
+  margin-bottom: 20px;
+}
+.card-body {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card-text {
+  color: #908e8e;
+}
+.card-img {
+  width: 100%;
+}
+.card-rating {
+  margin-bottom: 10px;
+}
+.card-rating .stars {
+  display: inline-block;
+}
+.card-rating .stars .fa-star {
+  font-size: 20px;
+  color: gold;
+}
+.card-rating p {
+  display: inline-block;
+  color: #525252;
+  font-weight: bold;
+}
+.add-to-card-btn {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+}
+.card-prices {
+  color: #9a9a9a;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-prices span {
+  font-size: 30px;
+  color: #000000;
+}
+
+.form {
+}
+.form fieldset {
+  width: 450px;
+  margin: 20px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 2px solid var(--dark);
+}
+.form legend {
+  padding: 0 20px;
+  font-size: 25px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-label {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  display: block;
+  margin-bottom: 10px;
+}
+.form-input,
+.form-select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid var(--dark);
+  font-size: 20px;
+  padding: 10px;
+  height: 50px;
+}
+.form-select {
+  appearance: none;
+  background-image: url(../images/drpodown.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: right 10px center;
+}
+
+textarea.form-input {
+  height: auto;
+}
+.form-input:focus-visible {
+  outline: none;
+}
+.form-btn {
+  border-radius: 0;
+  width: 100%;
+  display: block;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+.form-check {
+  display: block;
+}
+.form-check-input {
+  /* accent-color: var(--dark);
+  width: 20px;
+  height: 20px;
+  border: 10px; */
+  appearance: none;
+  /* background-color: red; */
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+.form-check-input:checked {
+  background-color: var(--dark);
+  background-image: url(../images/check-solid.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-check-label {
+  font-family: var(--heading-font);
+  cursor: pointer;
+  user-select: none;
+}
